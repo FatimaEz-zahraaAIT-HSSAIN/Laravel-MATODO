@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(56, 56, 56);
+}
+
+.wrapper{
+    position: relative;
+    padding: 10px 50px;
+    
+
+    .container{
+      padding: 10px 0;
+      border-bottom: 0.05rem solid rgb(219, 219, 219);
+
+        a{
+            margin-right: 30px;
+            float: right;
+            font-weight: 700;
+            font-size: xx-large;
+            color: rgb(12, 12, 46);
+        }
+    }
+    img{
+        width: 200px;
+    }
+}
+
+
+.form { 
+    position: relative;
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    top: 100px;
+    width: 550px;
+    height: 200px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+  }
+  
+  .input-container input {
+    background-color: #fff;
+    padding: 0.2rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 100%;
+    height: 80px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .submit {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 15px;
+    background-color: royalblue;
+    color: #ffffff;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100px;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 20px;
+    color: #FF196F;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #FF196F;
+  }
+  
+  .title::before {
+    width: 14px;
+    height: 14px;
+    background-color: #FF196F;
+  }
+  
+  .title::after {
+    width: 14px;
+    height: 14px;
+    animation: pulse 1s linear infinite;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }

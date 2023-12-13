@@ -1,0 +1,106 @@
+*{
+    font-family: 'Poppins' , sans-serif;
+}
+.container{
+
+    display: flex;
+    position: relative;
+    background-color: #F4EEFF;
+    height: 112vh;
+
+
+    & .wrap{
+        margin-top: 200px;
+        margin-left: 250px;
+        & .text{
+            position: relative;
+            color: #FF196F /*#D6B85C #112D4E*/;
+            font-weight: 600;
+            font-family: 'Poppins' , sans-serif;
+            font-size: 50px;
+            letter-spacing: 0.1rem;
+        }
+
+        & .first-text{
+            color: rgb(68, 74, 80);
+            font-weight: 300;
+        }
+
+        & .sec-text::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #F4EEFF;
+            border-left: 3px solid #FF196F;
+            animation: typing 4s steps(12) infinite;
+        }
+
+        & .button-sec{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0px;
+
+            & .btn-r{
+                background-color: #112D4E;
+                height: 50px;
+            }
+            
+
+            & p{
+                margin-left: 20px;
+                font-size: 15px;
+                letter-spacing: 0.1rem;
+                color: rgb(68, 74, 80);
+                font-weight: 500;
+
+                & .btn-l{
+                    color: #FF196F;
+                }
+            }
+            
+           
+        }
+    }
+
+    & img{
+        position: absolute;
+        right: 20px;
+        height: 450px;
+    }
+
+    & svg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+.main{
+    min-height: 100vh;
+
+    & .sub-main{
+        height: 60vh;
+        background-color: #8f8e92;
+        position: relative;
+
+        & svg{
+            position: absolute;
+            top: 60vh;
+        }
+    }
+
+    
+}
+
