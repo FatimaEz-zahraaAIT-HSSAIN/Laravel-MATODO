@@ -32,7 +32,6 @@
 
   .form, .tasks { 
     position: absolute;
-    
     background-color: #fff;
     display: block;
     padding: 1rem;
@@ -43,7 +42,7 @@
     top: 130px;
     width: 350px;
     right: 50px;
-    height: 150px;
+    height: 220px;
     box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
   
@@ -158,10 +157,15 @@
         color: royalblue;
       }
       .btn1{
-        right: -435px;
+        right: -535px;
       }
       .btn2{
-        right: -500px;
+        right: -600px;
+      }
+
+      .date{
+        position: absolute;
+        right: -450px;
       }
     }
 
@@ -176,7 +180,8 @@
     width: fit-content;
     transition: color 0.3s ease;
     margin: 5px 0;
-    width: 400px;
+    width: 350px;
+    word-break: break-all;
 
   }
   

@@ -30,6 +30,7 @@ class TasksController extends Controller
         
         $task = new Task;
         $task->task = $validatedData['task'];
+        $task->date = $request->date;
         $task->user_id = Auth::id(); 
         $task->save();
 
@@ -51,6 +52,7 @@ class TasksController extends Controller
     public function update(Request $r){
         $task = Task::find($r->task_id);
         $task->task = $r->task;
+        $task->date = $r->date;
         $task->save();
 
         return redirect()->route('todos.index');

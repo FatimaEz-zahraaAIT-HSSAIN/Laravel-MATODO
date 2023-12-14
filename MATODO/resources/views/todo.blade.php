@@ -17,6 +17,7 @@
         @csrf
         <div class="input-container">
           <input type="text" placeholder="Task" name="task">
+          <input type="date" name="date" >
           <span>
           </span>
         </div>
@@ -30,6 +31,7 @@
             <div class="task">
                 <input value="{{ $task->id }}" name="task" type="checkbox" id="{{ $task->id }}">
                 <label for="{{ $task->id }}">{{ $task->task }}</label>
+                <p class="date"> {{ $task->date }} </p>
                 <a class="btn1" href="/todos/edit/{{$task->id}}">Edit</a>
                 <a class="btn2" href="/todos/delete/{{$task->id}}">Delete</a>
             </div>

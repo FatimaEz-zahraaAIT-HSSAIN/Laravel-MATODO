@@ -19,6 +19,7 @@
             <div class="input-container">
                 <input type="hidden" name="task_id" value="{{$task->id}}">
             <input type="text" placeholder="" name="task" value="{{$task->task}}">
+            <input type="date" name="date" id="" value="{{$task->date}}">
             <span>
             </span>
             </div>
